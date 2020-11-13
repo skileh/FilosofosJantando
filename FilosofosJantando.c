@@ -50,9 +50,9 @@ void main (){
 
         vetorFilo = (NFilosofos*) malloc ((qFilo)*sizeof(NFilosofos));  //Aloca vetor de filósofos
         thFilo = (pthread_t*) malloc ((qFilo)*sizeof(pthread_t));   //Aloca vetor de threads
-        garfo = (sem_t*)malloc((quantFilo)*sizeof(sem_t));    //Aloca a quantidade de garfos = quantidade de filósofos
+        garfo = (sem_t*)malloc((qFilo)*sizeof(sem_t));    //Aloca a quantidade de garfos = quantidade de filósofos
         macarrao = (sem_t*)malloc((qMacarrao)*sizeof(sem_t)); //Aloca a quantidade de macarrão
-        estado = (int*)malloc((quantFilo)*sizeof(int));     //Aloca o vetor de estado dos filósofos	
+        estado = (int*)malloc((qFilo)*sizeof(int));     //Aloca o vetor de estado dos filósofos	
 
 
 
